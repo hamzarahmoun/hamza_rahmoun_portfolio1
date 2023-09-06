@@ -5,10 +5,15 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useMotionValue } from "framer-motion"
 import Link from 'next/link'
-import articel1 from '../../public/images/articles/pagination component in reactjs.jpg'
-import articel2 from '../../public/images/articles/create loading screen in react js.jpg'
-import articel3 from '../../public/images/articles/create modal component in react using react portals.png'
-import articel4 from '../../public/images/articles/create loading screen in react js.jpg'
+import articel1 from '../../public/images/articles/startup.png'
+import articel2 from '../../public/images/articles/health.jpg'
+import articel3 from '../../public/images/articles/ui.jpg'
+import articel4 from '../../public/images/articles/passion.webp'
+import articel5 from '../../public/images/articles/networking.webp'
+import articel6 from '../../public/images/articles/negotiation.jpg'
+import articel7 from '../../public/images/articles/cloud.jpg'
+
+
 import { TransitionEffect } from '@/components/TransitionEffect'
 
 
@@ -84,12 +89,12 @@ const FeaturedArticles = ({ img, title, summary, link, time }) => {
         // style={boxStyle}
         className='overflow:hidden relative rounded-3xl border 
         border-solid border-dark border-b-8 border-r-8 border-l-0 border-t-0 bg-light dark:bg-dark dark:border-light
-        sm:col-span-8
+        sm:col-span-8 h-[100%]  
         '
         
         >
 
-            <li className='col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light '>
+            <li className='col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light h-[100%] '>
 
                 <Link href={link} target='_blank'
                     className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
@@ -104,7 +109,7 @@ const FeaturedArticles = ({ img, title, summary, link, time }) => {
                     <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg'>{title}</h2>
                 </Link>
                 <p className='text-sm mb-2'>{summary}</p>
-                <span className='text-primary font-semibold dark:text-primaryDark xs:text-base'>{time}</span>
+                <span className='text-primary font-semibold dark:text-primaryDark xs:text-base '>{time}</span>
 
 
             </li>  </div>
@@ -114,10 +119,11 @@ const FeaturedArticles = ({ img, title, summary, link, time }) => {
 }
 
 const articles = () => {
+
     return (
-        <>
+        < >
             <Head>
-                <title>CodeBucks | Articales Page</title>
+                <title>Rahmoun | Articales Page</title>
                 <meta name='description' content='any description' />
             </Head>
             <TransitionEffect/>
@@ -129,19 +135,23 @@ const articles = () => {
                     <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-col-1 md:gap-y-16 '>
                         <FeaturedArticles
                             img={articel1}
-                            link="/"
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                    Follow this step-by-step guide to integrate Pagination component in your ReactJS project"
+                            link="https://medium.com/@wickswhisperer/6-artificial-intelligence-startup-ideas-to-make-money-with-openai-7602f4d424a4"
+                            title="6 Artificial Intelligence Startup Ideas To Make Money with OpenAI"
+                            summary="
+                            Are you intrigued by the world of AI startups and their potential for financial gain? 
+                            In this article, Hamza Rahmoun presents six innovative AI startup concepts that could revolutionize 
+                            industries and open doors to financial independence.
+                            "
                             time='9 min read'
                         />
                         <FeaturedArticles
                             img={articel2}
-                            link="/"
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                    Follow this step-by-step guide to integrate Pagination component in your ReactJS project"
-                            time='9 min read'
+                            link="https://medium.com/p/69e7ece7d0de"
+                            title="11 Simple ways to lead a healthy lifestyle "
+                            summary="Feeling burnt out and overwhelmed by the daily grind? 
+                            It's time to reclaim control over your health and well-being with these 11 simple strategies. In this article, 
+                            we'll guide you through practical steps to lead a healthier lifestyle"
+                            time='2 min read'
                         />
 
                     </ul>
@@ -150,37 +160,37 @@ const articles = () => {
                     </h2>
                     <ul>
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="March 22,2023"
-                            link="/"
-                            img={articel3}
+                            title="11 Tips for negotiating your designer salary"
+                            date="Jan 30,2023"
+                            link="https://bootcamp.uxdesign.cc/11-tips-for-negotiating-your-designer-salary-3f719c8fc7c0?gi=ca80a5ca5834&source=user_profile---------3----------------------------"
+                            img={articel6}
 
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="March 22,2023"
-                            link="/"
-                            img={articel3}
+                            title="Everything You Need To Know About Cloud Computing"
+                            date="Aug 29,2023"
+                            link="https://medium.com/@wickswhisperer/everything-you-need-to-know-about-cloud-computing-6fce3e99a4f8"
+                            img={articel7}
 
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="March 22,2023"
-                            link="/"
+                            title="The Benefits of Networking for Personal Growth"
+                            date="Feb 22,2023"
+                            link="https://medium.com/practice-in-public/the-benefits-of-networking-for-personal-growth-a1a5aa803429"
+                            img={articel5}
+
+                        />
+                        <Article
+                            title="11 Tips to Maintain Passion for Programming"
+                            date="Feb 5,2023"
+                            link="https://medium.com/illuminations-mirror/11-tips-to-maintain-passion-for-programming-cfd9084955d9"
                             img={articel4}
 
                         />
                         <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="March 22,2023"
-                            link="/"
-                            img={articel3}
-
-                        />
-                        <Article
-                            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-                            date="March 22,2023"
-                            link="/"
+                            title="7 UI design mistakes to avoid"
+                            date="Feb 3,2023"
+                            link="https://medium.com/design-bootcamp/7-ui-design-mistakes-to-avoid-46635ea8287a"
                             img={articel3}
 
                         />

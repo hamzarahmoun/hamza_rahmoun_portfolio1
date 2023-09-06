@@ -4,7 +4,7 @@ import { Logo } from './Logo'
 import { useRouter } from 'next/router'
 import { motion } from "framer-motion"
 
-import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from './Icons'
+import {  GithubIcon, LinkedInIcon, MoonIcon,SunIcon,MediumIcon } from './Icons'
 import useThemSwitche from './hooks/useThemSwitche'
 const CustomLink = ({ href, title, className = '' }) => {
     const router = useRouter();
@@ -70,36 +70,34 @@ export const NavBar = () => {
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/about" title="About" className='mx-4' />
-                    <CustomLink href="/projects" title="Projects" className='mx-4' />
+                    {/* <CustomLink href="/projects" title="Projects" className='mx-4' /> */}
                     <CustomLink href="/articles" title="Articles" className='ml-4' />
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    {/* <motion.a href='https://twitter.com' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mr-3'
-                    ><TwitterIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    ><TwitterIcon /></motion.a> */}
+                    <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mx-3'
                     ><GithubIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mx-3'
                     ><LinkedInIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+
+                    
+                    
+                    <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 bg-light rounded-full'
-                    ><PinterestIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 ml-3 '
-                    ><DribbbleIcon /></motion.a>
+                        className='w-6 ml-3'
+                    ><MediumIcon/></motion.a>
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
@@ -127,36 +125,30 @@ export const NavBar = () => {
                 <nav className='flex items-center flex-col justify-center '>
                     <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick}/>
                     <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick}/>
-                    <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} />
+                    {/* <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} /> */}
                     <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleCLick}/>
                 </nav>
 
-                <nav className='flex items-center justify-center flex-wrap mt-2'>
-                    <motion.a href='https://twitter.com' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 mr-3 sm:mx-1'
-                    ><TwitterIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                <nav className='flex items-center justify-center flex-wrap mt-2 '>
+                
+                    <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
                     ><GithubIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mx-3 sm:mx-1'
                     ><LinkedInIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 bg-light rounded-full sm:mx-1'
-                    ><PinterestIcon /></motion.a>
-                    <motion.a href='https://twitter.com' target={'_blank'}
+                    
+                    
+                    <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 ml-3 sm:mx-1 '
-                    ><DribbbleIcon /></motion.a>
+                        
+                    ><MediumIcon /></motion.a>
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}

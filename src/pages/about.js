@@ -37,7 +37,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Hamza Rahmoun | About Page</title>
+                <title>Rahmoun | About Page</title>
                 <meta name='description' content='any description' />
             </Head>
             <TransitionEffect />
@@ -86,7 +86,7 @@ const about = () => {
                         <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                             <div className='flex flex-col justify-center items-end xl:items-center'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-4xl '>
-                                    <AnimatedNumbers value={50} />+
+                                    <AnimatedNumbers value={5} />+
                                 </span>
                                 <he className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
                                 xs:text-sm
@@ -96,7 +96,7 @@ const about = () => {
                             </div>
                             <div className='col-span-2 flex flex-col items-end justify-center xl:items-center'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text-4xl'>
-                                    <AnimatedNumbers value={40} />+
+                                    <AnimatedNumbers value={7} />+
                                 </span>
                                 <he className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
                                 xs:text-sm'>

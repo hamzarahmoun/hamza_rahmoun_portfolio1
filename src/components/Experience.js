@@ -19,7 +19,7 @@ const Details = ({ position, comapny, companyLink, time, adress, work }) => {
                 className='text-primary capitalize dark:text-primaryDark'
             >@{comapny}</a></h3>
             <span className='capiatalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                {time}|{adress}
+                {time} | {adress}
             </span>
             <p className='font-medium w-full ms:text-sm'>
                 {work}
@@ -27,7 +27,7 @@ const Details = ({ position, comapny, companyLink, time, adress, work }) => {
         </motion.div>
     </li>
 }
-export const Experience = () => {
+  export const Experience = () => {
     const ref= useRef(null)
 
     const {scrollYProgress} = useScroll({
@@ -51,59 +51,28 @@ export const Experience = () => {
                 '/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
+                        position='Web Developer' comapny='Freelance'
+                        comapnyLink='/'
+                        time='May 2023-Present' adress='Remote'
+                        work='As a freelance web developer, I operate independently, focusing on refining my skills and working on various web development projects.'
 
                     />
                     <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
+                        position='Content Writer' comapny='Medium'
+                        comapnyLink='https://medium.com/@wickswhisperer'
+                        time='Jan 2023-Present' adress='Remote'
+                        work='I am a content writer on Medium, focusing on creating engaging and informative articles on various topics.'
 
                     />
                     <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
+                        position='Assistance technique' comapny='Vehicle Technical Inspection'
+                        comapnyLink='/'
+                        time='Mar 2023-Apr 2023' adress='On-site'
+                        work='I served as a technical assistant in vehicle control, where my responsibilities included supporting the development and maintenance of control systems for vehicles.'
 
                     />
-                    <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
-
-                    />
-                    <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
-
-                    />
-                    <Details
-                        position='Software Engineer' comapny='Google'
-                        comapnyLink='www.google.com'
-                        time='2022-Present' adress='Mountain View, CA'
-                        work='Worked on a team responsible for developing new features for Google"s 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization.'
-
-                    />
+                    
+                   
                 </ul>
             </div>
         </div>

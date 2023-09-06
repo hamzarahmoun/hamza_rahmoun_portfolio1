@@ -46,31 +46,33 @@ export const Education = () => {
                 ' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details
-                        type='Bachelor Of Science In Computer Science' time='2016-2020'
-                         place='Massachusetts Institute Of Technology (MIT)'
-                        info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence'
+                        type='Technicien Spécialisé Infrastructure Digitale option Cloud Computing' time='2021-2023'
+                         place='Specialized Institute Of Applied Technology NTIC'
+                         info={
+                           'This comprehensive program encompassed essential topics, including understanding cloud architecture, exploring both public and proprietary cloud environments, implementing cloud solutions using open-source technologies, administering cloud environments, ensuring security measures, governing cloud-based data, and establishing strategies for maintaining information systems in online environments'
+                        }
+                        
 
                     />
                      <Details
-                        type='Bachelor Of Science In Computer Science' time='2016-2020'
-                         place='Massachusetts Institute Of Technology (MIT)'
-                        info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence'
+                        type="Bachelor's degree" time='2020-2021'
+                        place='Nanjing International School'
+                        info={
+                        "I embarked on a journey to pursue a MBachelor's degree, eager to delve into the world of technology and programming. However, the unforeseen challenges posed by the COVID-19 pandemic, coupled with the significant time difference between China and Morocco, presented obstacles that made it difficult for me to continue my studies in this specialized field. Despite the setbacks, I remain passionate about technology and am exploring alternative ways to further my knowledge and contribute to the ever-evolving tech landscape."
+
+                        }
 
                     />
                      <Details
-                        type='Bachelor Of Science In Computer Science' time='2016-2020'
-                         place='Massachusetts Institute Of Technology (MIT)'
-                        info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence'
+                        type='Chinese language and literature' time='2019-2020'
+                        place='Nanchang Foreign Language School'
+                        info="I have been immersed in Mandarin language and culture through conversations with a native speaker, which has allowed me to gain insights into Chinese culture and history. I've also explored the art of Chinese calligraphy and developed basic translation abilities, enabling me to facilitate communication between Chinese and English."
 
                     />
                      <Details
-                        type='Bachelor Of Science In Computer Science' time='2016-2020'
-                         place='Massachusetts Institute Of Technology (MIT)'
-                        info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence'
+                        type='Accounting' time='2018-2019'
+                        place='Specialized Institute Of Applied Technology NTIC'
+                        info='I have undertaken a comprehensive program covering various aspects of business and finance, including a global approach to business environments, fundamental concepts of general accounting, business calculations, financial analysis, personnel administration, and proficiency in management software encompassing accounting, payroll, and commerce. This diverse skill set equips me with a holistic understanding of business operations and financial management.'
 
                     />
                 </ul>

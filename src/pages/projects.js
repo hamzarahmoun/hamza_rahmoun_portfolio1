@@ -147,7 +147,7 @@ const projects = () => {
 
         <>
             <Head>
-                <title>CodeBucks | Projects Page</title>
+                <title>Rahmoun | Projects Page</title>
                 <meta name='description' content='any description' />
             </Head>
             <TransitionEffect/>
@@ -194,7 +194,7 @@ const projects = () => {
 
                             />
                         </div>
-                        <div className='col-span-12'>
+                        {/* <div className='col-span-12'>
                             <FeaturedProjects
                                 title="Crypto Screener Application"
                                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
@@ -206,9 +206,9 @@ const projects = () => {
                                 github="/"
 
                             />
-                        </div>
+                        </div> */}
 
-                        <div className='col-span-6 sm:col-span-12'>
+                        {/* <div className='col-span-6 sm:col-span-12'>
                             <Project
                                 title="Crypto Screener Application"
                                 link="/"
@@ -227,7 +227,7 @@ const projects = () => {
                                 github="/"
 
                             />
-                        </div>
+                        </div> */}
 
                     </div>
 
