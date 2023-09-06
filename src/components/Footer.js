@@ -8,14 +8,14 @@ export const Footer = () => {
     sm:text-base
     '>
 
-        <Layout className='py-8 flex items-center justify-between lg:flex-col'>
+        <Layout className='py-8 flex items-center justify-between lg:flex-col '>
             <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
             <div className='flex items-center lg:py-2'>
                 Build With <span className='text-primary dark:text-primaryDark text-2xl px-1'>&#9825;</span>
-                by&nbsp;<Link href="https://medium.com/@wickswhisperer" className='underline underline-offset-2'>Hamza</Link>
+                by&nbsp;<Link href="https://www.linkedin.com/in/hamza-rahmoun/" target={'_blank'} className='underline underline-offset-2'>Hamza</Link>
             
             </div>
-            <Link href="https://medium.com/@wickswhisperer" target={'_blank'} className='underline underline-offset-2 '> Say hello</Link>
+            <Link href="https://www.linkedin.com/in/hamza-rahmoun/" target={'_blank'} className='underline underline-offset-2 '> Say hello</Link>
         </Layout>
 
     </footer>

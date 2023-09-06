@@ -49,6 +49,7 @@ const CustomMobileLink = ({ href, title, className = '',toggle } ) => {
     )
 }
 export const NavBar = () => {
+    
     const [mode, setMode] = useThemSwitche();
     const [isOpen, setIsOpen] = useState(false);
     const handleCLick = () => {
@@ -123,7 +124,7 @@ export const NavBar = () => {
             className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             bg-dark/90 dark:bg-light/75  rounded-lg backdrop-blur-md py-32
             '>
-                <nav className='flex items-center flex-col justify-center'>
+                <nav className='flex items-center flex-col justify-center '>
                     <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick}/>
                     <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick}/>
                     <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} />

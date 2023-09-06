@@ -37,33 +37,38 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>CodeBucks | About Page</title>
+                <title>Hamza Rahmoun | About Page</title>
                 <meta name='description' content='any description' />
             </Head>
-            <TransitionEffect/>
+            <TransitionEffect />
             <main className='flex w-full items-center justify-center flex-col dark:text-light'>
 
                 <Layout className='pt-16'>
-                    <AnimatedText text='Passion Fuels Purpose!' className='mb-16 lg:!text-7xl sm:!text-5xl xs:!text-4xl sm:mb-8' />
+                    <AnimatedText text='Skill Unleashes Brilliance!' className='mb-16 lg:!text-7xl sm:!text-5xl xs:!text-4xl sm:mb-8' />
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                         <div className='col-span-3 flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 '>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>
                                 Biography
                             </h2>
                             <p className='font-medium'>
-                                Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
-                                and user-centered digital experiences. With 4 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my clients' visions to life.
+                                I'm a tech enthusiast and diplomat, embarking on a journey into cloud computing and technology. While I'm just beginning, my unwavering passion fuels my learning.
+
                             </p>
                             <p className='my-4 font-medium'>
-                                I believe that design is about more than just making things look pretty – it's about solving problems and
-                                creating intuitive, enjoyable experiences for users.
+                                Cloud computing captivates me for its transformative potential and ability to empower industries. Technology, in my view, sparks innovation and solves complex problems.
+
+                            </p>
+                            <p className='my-4 font-medium'>
+                                Simultaneously, I'm delving into UI/UX design and web development. Though my experience is limited, my thirst for learning drives me. I aim to create user-centered, intuitive experiences.
+                            </p>
+                            <p className='my-4 font-medium' >
+                                My commitment to learning and love for tech propel me forward. Join me in exploring technology's boundless potential, bridging innovation and user-centric design, creating meaningful experiences.
+
                             </p>
                             <p className='font-medium'>
-                                Whether I'm working on a website, mobile app, or
-                                other digital product, I bring my commitment to design excellence and user-centered thinking to
-                                every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
-                            </p>
+                            Let's embark on this adventure, where challenges are opportunities and lessons bring us closer to realizing tech-infused dreams.
+
+</p>
                         </div >
                         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
                         bg-light p-8 border-b-8 border-r-8 dark:bg-dark dark:border-light xl:col-span-4 
