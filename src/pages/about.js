@@ -51,7 +51,7 @@ const about = () => {
                                 Biography
                             </h2>
                             <p className='font-medium'>
-                                I'm a tech enthusiast and diplomat, embarking on a journey into cloud computing and technology. While I'm just beginning, my unwavering passion fuels my learning.
+                                I&apos;m a tech enthusiast and diplomat, embarking on a journey into cloud computing and technology. While I&apos;m just beginning, my unwavering passion fuels my learning.
 
                             </p>
                             <p className='my-4 font-medium'>
@@ -59,16 +59,16 @@ const about = () => {
 
                             </p>
                             <p className='my-4 font-medium'>
-                                Simultaneously, I'm delving into UI/UX design and web development. Though my experience is limited, my thirst for learning drives me. I aim to create user-centered, intuitive experiences.
+                                Simultaneously, I&apos;m delving into UI/UX design and web development. Though my experience is limited, my thirst for learning drives me. I aim to create user-centered, intuitive experiences.
                             </p>
                             <p className='my-4 font-medium' >
-                                My commitment to learning and love for tech propel me forward. Join me in exploring technology's boundless potential, bridging innovation and user-centric design, creating meaningful experiences.
+                                My commitment to learning and love for tech propel me forward. Join me in exploring technology&apos;s boundless potential, bridging innovation and user-centric design, creating meaningful experiences.
 
                             </p>
                             <p className='font-medium'>
-                            Let's embark on this adventure, where challenges are opportunities and lessons bring us closer to realizing tech-infused dreams.
-
+    Let&apos;s embark on this adventure, where challenges are opportunities and lessons bring us closer to realizing tech-infused dreams.
 </p>
+
                         </div >
                         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
                         bg-light p-8 border-b-8 border-r-8 dark:bg-dark dark:border-light xl:col-span-4 
