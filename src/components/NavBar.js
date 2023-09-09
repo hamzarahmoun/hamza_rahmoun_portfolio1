@@ -71,10 +71,10 @@ export const NavBar = () => {
             </button>
             <div className='w-full flex justify-between items-center lg:hidden'>
                 <nav>
-                    <CustomLink href="/" title="Home" className='mr-4 aria-label="home"' />
-                    <CustomLink href="/about" title="About" className='mx-4 aria-label="about"' />
+                    <CustomLink href="/" title="Home" className='mr-4 ' />
+                    <CustomLink href="/about" title="About" className='mx-4 ' />
                     {/* <CustomLink href="/projects" title="Projects" className='mx-4' /> */}
-                    <CustomLink href="/articles" title="Articles" className='ml-4 aria-label="articles"' />
+                    <CustomLink href="/articles" title="Articles" className='ml-4 ' />
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
@@ -122,10 +122,10 @@ export const NavBar = () => {
             bg-dark/90 dark:bg-light/75  rounded-lg backdrop-blur-md py-32
             '>
                         <nav className='flex items-center flex-col justify-center '>
-                            <CustomMobileLink href="/" title="Home" className='aria-label="home"' toggle={handleCLick} />
-                            <CustomMobileLink href="/about" title="About" className='aria-label="about"' toggle={handleCLick} />
+                            <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick} />
+                            <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick} />
                             {/* <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} /> */}
-                            <CustomMobileLink href="/articles" title="Articles" className='aria-label="articles"' toggle={handleCLick} />
+                            <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleCLick} />
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap mt-2 '>
