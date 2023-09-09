@@ -1,6 +1,6 @@
 import { Layout } from '@/components/Layout'
 import Head from 'next/head'
-import profilePic from "../../public/images/profile/hamza1.png"
+import profilePic from "../../public/images/profile/ps2.png"
 import Image from 'next/image'
 import { AnimatedText } from '@/components/AnimatedText'
 import Link from 'next/link'
@@ -9,6 +9,9 @@ import { HireMe } from '@/components/HireMe'
 import lighBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 import { TransitionEffect } from '@/components/TransitionEffect'
 export default function Home() {
+  
+
+  
   return (
     <>
       <Head>
@@ -29,9 +32,9 @@ export default function Home() {
               sizes='(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw
-
-
               '
+              
+          
               />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>

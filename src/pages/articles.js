@@ -67,7 +67,7 @@ const Article = ({ img, title, date, link }) => {
         border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light 
         sm:flex-col
         '>
-            <MovingImg title={title} img={img} link={link} />
+            <MovingImg title={title} img={img} link={link} priority/>
             <span className='text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm'>{date}</span>
         </motion.li>
     )
@@ -75,19 +75,10 @@ const Article = ({ img, title, date, link }) => {
 }
 
 const FeaturedArticles = ({ img, title, summary, link, time }) => {
-    // const boxStyle = {
-    //     backgroundColor: 'black', // Background color for the black box
-    //     boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Box shadow for the shadow effect
-    //     borderRadius: '30px',
-    //     paddingRight: '10px', // Additional padding on the right for spacing
-    //     paddingBottom: '10px',
 
-    // };
     return (
         <div 
-        
-        // style={boxStyle}
-        className='overflow:hidden relative rounded-3xl border 
+                className='overflow:hidden relative rounded-3xl border 
         border-solid border-dark border-b-8 border-r-8 border-l-0 border-t-0 bg-light dark:bg-dark dark:border-light
         sm:col-span-8 h-[100%]  
         '
@@ -100,8 +91,10 @@ const FeaturedArticles = ({ img, title, summary, link, time }) => {
                     className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
                 >
                     <FramerImage src={img} alt={title} className='w-full h-auto'
+                    priority
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.2 }}
+                        
 
                     />
                 </Link>

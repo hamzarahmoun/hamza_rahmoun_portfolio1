@@ -4,7 +4,7 @@ import { Logo } from './Logo'
 import { useRouter } from 'next/router'
 import { motion } from "framer-motion"
 
-import {  GithubIcon, LinkedInIcon, MoonIcon,SunIcon,MediumIcon } from './Icons'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MediumIcon } from './Icons'
 import useThemSwitche from './hooks/useThemSwitche'
 const CustomLink = ({ href, title, className = '' }) => {
     const router = useRouter();
@@ -25,9 +25,9 @@ const CustomLink = ({ href, title, className = '' }) => {
         </Link>
     )
 }
-const CustomMobileLink = ({ href, title, className = '',toggle } ) => {
+const CustomMobileLink = ({ href, title, className = '', toggle }) => {
     const router = useRouter();
-    const handleCLick=()=>{
+    const handleCLick = () => {
         toggle();
         router.push(href)
     }
@@ -49,12 +49,15 @@ const CustomMobileLink = ({ href, title, className = '',toggle } ) => {
     )
 }
 export const NavBar = () => {
-    
+
     const [mode, setMode] = useThemSwitche();
     const [isOpen, setIsOpen] = useState(false);
     const handleCLick = () => {
         setIsOpen(!isOpen)
     }
+
+
+
     return (
         <header
             className='w-full px-32 py-8 font-medium flex items-center justify-between
@@ -91,13 +94,13 @@ export const NavBar = () => {
                         className='w-6 mx-3'
                     ><LinkedInIcon /></motion.a>
 
-                    
-                    
+
+
                     <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-6 ml-3'
-                    ><MediumIcon/></motion.a>
+                    ><MediumIcon /></motion.a>
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
@@ -115,61 +118,69 @@ export const NavBar = () => {
             </div>
             {
 
-            isOpen?
-            <motion.div 
-            initial={{scale:0,opacity:0,x:"-50%",y:"-50%"}}
-            animate={{scale:1,opacity:1}}
-            className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                isOpen ?
+                    <motion.div
+                        initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             bg-dark/90 dark:bg-light/75  rounded-lg backdrop-blur-md py-32
             '>
-                <nav className='flex items-center flex-col justify-center '>
-                    <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick}/>
-                    <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick}/>
-                    {/* <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} /> */}
-                    <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleCLick}/>
-                </nav>
+                        <nav className='flex items-center flex-col justify-center '>
+                            <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick} />
+                            <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick} />
+                            {/* <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} /> */}
+                            <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleCLick} />
+                        </nav>
 
-                <nav className='flex items-center justify-center flex-wrap mt-2 '>
-                
-                    <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
-                    ><GithubIcon /></motion.a>
-                    <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 sm:mx-1'
-                    ><LinkedInIcon /></motion.a>
-                    
-                    
-                    <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 ml-3 sm:mx-1 '
-                        
-                    ><MediumIcon /></motion.a>
-                    <button
-                        className={`ml-3 flex items-center justify-center rounded-full p-1
+                        <nav className='flex items-center justify-center flex-wrap mt-2 '>
+
+                            <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+                            ><GithubIcon /></motion.a>
+                            <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='w-6 mx-3 sm:mx-1'
+                            ><LinkedInIcon /></motion.a>
+
+
+                            <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='w-6 ml-3 sm:mx-1 '
+
+                            ><MediumIcon /></motion.a>
+                            <button
+                                className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                 `}
-                        onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                    >
-                        {
-                            mode === "dark" ?
-                                <SunIcon className={"fill-dark"} />
-                                : <MoonIcon className={"fill-dark"} />
-                        }
+                                onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                            >
+                                {
+                                    mode === "dark" ?
+                                        <SunIcon className={"fill-dark"} />
+                                        : <MoonIcon className={"fill-dark"} />
+                                }
 
-                    </button>
-                </nav>
-            </motion.div>
-            :null
+                            </button>
+                        </nav>
+                    </motion.div>
+                    : null
+            }
+            {
+                isOpen ?
+                    null
+                    : <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
+                        <Logo />
+
+
+                    </div>
+
             }
 
-            <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-                <Logo />
-            </div>
+
 
         </header>
     )
