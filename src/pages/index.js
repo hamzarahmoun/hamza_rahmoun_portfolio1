@@ -1,6 +1,7 @@
 import { Layout } from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from "../../public/images/profile/ps2.png"
+
 import Image from 'next/image'
 import { AnimatedText } from '@/components/AnimatedText'
 import Link from 'next/link'
@@ -61,7 +62,7 @@ export default function Home() {
                 className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                 md:text-base 
                 '
-                > Contact </Link>
+                > Contact</Link>
                </div>
             </div>
           </div>
