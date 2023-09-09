@@ -1,13 +1,13 @@
-import { AnimatedText } from '@/components/AnimatedText';
-import { Layout } from '@/components/Layout';
+import { AnimatedText } from '../components/AnimatedText';
+import { Layout } from '../components/Layout';
 import Head from 'next/head'
 import Link from 'next/link';
 import {motion} from "framer-motion"
-import { TransitionEffect } from '@/components/TransitionEffect'
+import { TransitionEffect } from '../components/TransitionEffect'
 
 import React from 'react';
 import Image from 'next/image';
-import { GithubIcon } from '@/components/Icons';
+import { GithubIcon } from '../components/Icons';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 const FramerImage =motion(Image);
 
