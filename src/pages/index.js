@@ -54,7 +54,6 @@ export default function Home() {
 
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                 md:p-2 md:px-4 md:text-base
-                id="combo" aria-label="Aria Resume"
 
 
                 '
@@ -64,7 +63,6 @@ export default function Home() {
                 className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                 md:text-base   aria-
                   
-                id="comboe" aria-label="Aria Contact"
                 
                 '
                 > Contact</Link>

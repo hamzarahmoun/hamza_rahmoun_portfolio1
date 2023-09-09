@@ -82,12 +82,12 @@ export const NavBar = () => {
                     <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 aria-label="github"'
+                        className='w-6 mx-3 '
                     ><GithubIcon /></motion.a>
                     <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3 aria-label="linkedin"'
+                        className='w-6 mx-3 '
                     ><LinkedInIcon /></motion.a>
 
 
@@ -95,7 +95,7 @@ export const NavBar = () => {
                     <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 ml-3 aria-label="medium"'
+                        className='w-6 ml-3 '
                     ><MediumIcon /></motion.a>
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1
@@ -133,19 +133,19 @@ export const NavBar = () => {
                             <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='aria-label="github" w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+                                className=' w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
                             ><GithubIcon /></motion.a>
                             <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mx-3 sm:mx-1 aria-label="linkedin"'
+                                className='w-6 mx-3 sm:mx-1 '
                             ><LinkedInIcon /></motion.a>
 
 
                             <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 ml-3 sm:mx-1 aria-label="medium"'
+                                className='w-6 ml-3 sm:mx-1 '
 
                             ><MediumIcon /></motion.a>
                             <button
