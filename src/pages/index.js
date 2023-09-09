@@ -54,7 +54,7 @@ export default function Home() {
 
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                 md:p-2 md:px-4 md:text-base
-                aria-label="Download Resume"
+                id="combo" aria-label="Aria Resume"
 
 
                 '
@@ -63,8 +63,8 @@ export default function Home() {
                 <Link href="mailto:hamza.rahmoun456@gmail.com" target="_blank"
                 className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                 md:text-base 
+                id="comboe" aria-label="Aria Contact"
                 
-                aria-label="Contact"
                 '
                 > Contact</Link>
                </div>
