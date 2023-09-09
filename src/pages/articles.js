@@ -1,5 +1,5 @@
-import { AnimatedText } from '../components/AnimatedText'
-import { Layout } from '../components/Layout'
+import { AnimatedText } from '@/components/AnimatedText'
+import { Layout } from '@/components/Layout'
 import Head from 'next/head'
 import React, { useRef } from 'react'
 import Image from 'next/image'
