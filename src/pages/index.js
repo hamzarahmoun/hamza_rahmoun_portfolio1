@@ -44,7 +44,7 @@ export default function Home() {
               
               '/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-              As a seasoned cloud computing specialist and web design enthusiast, I thrive on transforming complex tech challenges into elegant solutions. 
+              As a seasoned cloud computing specialist and web developer enthusiast, I thrive on transforming complex tech challenges into elegant solutions. 
               Discover my latest projects and insights, highlighting my expertise in cloud architecture and creative web design
               </p>
                <div className='flex items-center self-start mt-2 lg:self-center '>
