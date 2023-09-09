@@ -1,14 +1,14 @@
-import { Layout } from '../components/Layout'
+import { Layout } from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from "../../public/images/profile/ps2.png"
 
 import Image from 'next/image'
-import { AnimatedText } from '../components/AnimatedText'
+import { AnimatedText } from '@/components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from '../components/Icons'
-import { HireMe } from '../components/HireMe'
+import { LinkArrow } from '@/components/Icons'
+import { HireMe } from '@/components/HireMe'
 import lighBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
-import { TransitionEffect } from '../components/TransitionEffect'
+import { TransitionEffect } from '@/components/TransitionEffect'
 export default function Home() {
   
 
