@@ -71,27 +71,23 @@ export const NavBar = () => {
             </button>
             <div className='w-full flex justify-between items-center lg:hidden'>
                 <nav>
-                    <CustomLink href="/" title="Home" className='mr-4' />
-                    <CustomLink href="/about" title="About" className='mx-4' />
+                    <CustomLink href="/" title="Home" className='mr-4 aria-label="home"' />
+                    <CustomLink href="/about" title="About" className='mx-4 aria-label="about"' />
                     {/* <CustomLink href="/projects" title="Projects" className='mx-4' /> */}
-                    <CustomLink href="/articles" title="Articles" className='ml-4' />
+                    <CustomLink href="/articles" title="Articles" className='ml-4 aria-label="articles"' />
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    {/* <motion.a href='https://twitter.com' target={'_blank'}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className='w-6 mr-3'
-                    ><TwitterIcon /></motion.a> */}
+                    
                     <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3'
+                        className='w-6 mx-3 aria-label="github"'
                     ><GithubIcon /></motion.a>
                     <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 mx-3'
+                        className='w-6 mx-3 aria-label="linkedin"'
                     ><LinkedInIcon /></motion.a>
 
 
@@ -99,7 +95,7 @@ export const NavBar = () => {
                     <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className='w-6 ml-3'
+                        className='w-6 ml-3 aria-label="medium"'
                     ><MediumIcon /></motion.a>
                     <button
                         className={`ml-3 flex items-center justify-center rounded-full p-1
@@ -126,10 +122,10 @@ export const NavBar = () => {
             bg-dark/90 dark:bg-light/75  rounded-lg backdrop-blur-md py-32
             '>
                         <nav className='flex items-center flex-col justify-center '>
-                            <CustomMobileLink href="/" title="Home" className='' toggle={handleCLick} />
-                            <CustomMobileLink href="/about" title="About" className='' toggle={handleCLick} />
+                            <CustomMobileLink href="/" title="Home" className='aria-label="home"' toggle={handleCLick} />
+                            <CustomMobileLink href="/about" title="About" className='aria-label="about"' toggle={handleCLick} />
                             {/* <CustomMobileLink href="/projects" title="Projects" className=''toggle={handleCLick} /> */}
-                            <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleCLick} />
+                            <CustomMobileLink href="/articles" title="Articles" className='aria-label="articles"' toggle={handleCLick} />
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap mt-2 '>
@@ -137,19 +133,19 @@ export const NavBar = () => {
                             <motion.a href='https://github.com/hamzarahmoun' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+                                className='aria-label="github" w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
                             ><GithubIcon /></motion.a>
                             <motion.a href='https://www.linkedin.com/in/hamza-rahmoun/' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 mx-3 sm:mx-1'
+                                className='w-6 mx-3 sm:mx-1 aria-label="linkedin"'
                             ><LinkedInIcon /></motion.a>
 
 
                             <motion.a href='https://medium.com/@wickswhisperer' target={'_blank'}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className='w-6 ml-3 sm:mx-1 '
+                                className='w-6 ml-3 sm:mx-1 aria-label="medium"'
 
                             ><MediumIcon /></motion.a>
                             <button
