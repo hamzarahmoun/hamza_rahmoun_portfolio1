@@ -62,7 +62,8 @@ export default function Home() {
                 >Resume <LinkArrow className={"w-6 ml-1"}/></Link>
                 <Link href="mailto:hamza.rahmoun456@gmail.com" target="_blank"
                 className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
-                md:text-base 
+                md:text-base   aria-
+                  
                 id="comboe" aria-label="Aria Contact"
                 
                 '
