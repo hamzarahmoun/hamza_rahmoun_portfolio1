@@ -1,5 +1,5 @@
-import { AnimatedText } from '@/components/AnimatedText'
-import { Layout } from '@/components/Layout'
+import { AnimatedText } from '../components/AnimatedText'
+import { Layout } from '../components/Layout'
 import Head from 'next/head'
 import React, { useRef } from 'react'
 import Image from 'next/image'
@@ -14,7 +14,7 @@ import articel6 from '../../public/images/articles/negotiation.jpg'
 import articel7 from '../../public/images/articles/cloud.jpg'
 
 
-import { TransitionEffect } from '@/components/TransitionEffect'
+import { TransitionEffect } from '../components/TransitionEffect'
 
 
 const FramerImage = motion(Image);

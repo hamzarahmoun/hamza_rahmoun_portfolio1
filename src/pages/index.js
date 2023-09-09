@@ -1,14 +1,14 @@
-import { Layout } from '@/components/Layout'
+import { Layout } from '../components/Layout'
 import Head from 'next/head'
 import profilePic from "../../public/images/profile/ps2.png"
 
 import Image from 'next/image'
-import { AnimatedText } from '@/components/AnimatedText'
+import { AnimatedText } from '../components/AnimatedText'
 import Link from 'next/link'
-import { LinkArrow } from '@/components/Icons'
-import { HireMe } from '@/components/HireMe'
+import { LinkArrow } from '../components/Icons'
+import { HireMe } from '../components/HireMe'
 import lighBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
-import { TransitionEffect } from '@/components/TransitionEffect'
+import { TransitionEffect } from '../components/TransitionEffect'
 export default function Home() {
   
 
@@ -48,7 +48,7 @@ export default function Home() {
               Discover my latest projects and insights, highlighting my expertise in cloud architecture and creative web design
               </p>
                <div className='flex items-center self-start mt-2 lg:self-center '>
-                <Link href="/my-cv.pdf" target="_blank" 
+                <Link href="/cv.pdf" target="_blank" 
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
 
