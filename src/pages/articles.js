@@ -1,7 +1,7 @@
 import { AnimatedText } from '../components/AnimatedText'
 import { Layout } from '../components/Layout'
 import Head from 'next/head'
-import React, { useRef } from 'react'
+import React, { useRef} from 'react'
 import Image from 'next/image'
 import { motion, useMotionValue } from "framer-motion"
 import Link from 'next/link'
@@ -58,6 +58,8 @@ const MovingImg = ({ title, img, link }) => {
     )
 }
 const Article = ({ img, title, date, link }) => {
+
+
     return (
         <motion.li 
         initial={{y:200}}
@@ -111,8 +113,10 @@ const FeaturedArticles = ({ img, title, summary, link, time }) => {
 
 }
 
-const articles = () => {
 
+const articles = () => {
+    
+   
     return (
         < >
             <Head>
