@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MediumIcon } from './Icons'
 import useThemSwitche from './hooks/useThemSwitche'
+import { useBodyContext } from '../pages'
 const CustomLink = ({ href, title, className = '' }) => {
     const router = useRouter();
     return (
@@ -49,6 +50,10 @@ const CustomMobileLink = ({ href, title, className = '', toggle }) => {
     )
 }
 export const NavBar = () => {
+
+
+
+
 
     const [mode, setMode] = useThemSwitche();
     const [isOpen, setIsOpen] = useState(false);
